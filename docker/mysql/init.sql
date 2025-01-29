@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS news_db;
+CREATE USER IF NOT EXISTS 'news_user'@'%' IDENTIFIED BY 'news_password';
+GRANT ALL PRIVILEGES ON news_db.* TO 'news_user'@'%';
+FLUSH PRIVILEGES;
